@@ -1,0 +1,37 @@
+<div class="search_div">
+	<div class="head">
+		<span class="iconfonts" ng-click="backHome()">&#xe611;</span>
+		<input type="text" id="ipt" placeholder="&nbsp;猪蹄" value="{{ aa }}"/>
+	</div>
+	<div class="hotSearch">热门搜索</div>
+	<div class="kind" ng-click='kind($event)' myt="2">
+		<a href="javasript:;" myt='1'>马玉涛</a>
+		<a href="javasript:;" myt='1'>米线</a>
+		<a href="javasript:;" myt='1'>黄焖鸡</a>
+		<a href="javasript:;" myt='1'>紫菜包饭</a><br>
+		<a href="javasript:;" myt='1'>麦当劳</a>
+		<a href="javasript:;" myt='1'>饺子</a>
+		<a href="javasript:;" myt='1'>必胜客</a>
+		<a href="javasript:;" myt='1'>肯德基</a>
+	</div>
+	<div class="s_history">
+		搜索历史
+	</div>
+	<ul id="historyList" ng-click='his($event)'>
+		<li>
+			<a href="javascript:;">马玉涛</a>
+		</li>
+		<li>
+			<a href="javascript:;">猪蹄</a>
+		</li>
+		<li>
+			<a href="javascript:;">麦当劳</a>
+		</li>
+		<li>
+			<a href="javascript:;" >肯德基</a>
+		</li>
+		<li>
+			<a href="javascript:;" ng-click='clear()' style="color: #3290e9;">清空搜索记录</a>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,98 @@
+<div id="shops-detail">
+    <div id="shops-first">
+        <div id="detail-header">
+            <figure>
+                <img src="https://fuss10.elemecdn.com/3/0d/90c91aafa37de8ec0488c731c2deejpeg.jpeg?imageMogr/quality/80/format/webp/" alt="logo图片">
+                <figcaption>
+                    <h3>必胜宅急送（育知东路店）</h3>
+                    <p>商家配送/配送费￥9</p>
+                    <p><span id="jian"></span>[927品质节]满50元减10元</p>
+                </figcaption>
+            </figure>
+            <div id="ad">
+                <p><span>公告</span>
+                    欢迎光临必胜宅急送品牌官方店，专营外送，丰富选择，价格亲民。如您需要开发票，请在订单备注开票抬头，7月1日起我们将为您提供电子发票提取码，您可以根据小票上的提示自行下载。
+                </p>
+            </div>
+        </div>
+        <div id="detail-content">
+            <ul id="detail-nav">
+                <li><a href="javascript:void(0)">商品</a></li>
+                <li><a href="javascript:void(0)" ng-click="show()">商家</a></li>
+            </ul>
+            <div id="content-left">
+                <ul>
+                    <li>5折品质节特供</li>
+                    <li>新品推荐</li>
+                    <li>当季特选</li>
+                    <li>优惠套餐</li>
+                    <li>纯珍9寸比萨</li>
+                    <li>纯珍12存比萨</li>
+                    <li>纯珍9寸比萨</li>
+                    <li>纯珍9寸比萨</li>
+                    <li>纯珍9寸比萨</li>
+                    <li>纯珍9寸比萨</li>
+                </ul>
+            </div>
+            <div id="content-right">
+                <dl ng-repeat="x in data">
+                    <dt>{{x.title}}</dt>
+                    <dd ng-repeat="y in x.shopsArr">
+                        <img ng-src="{{y.imgUrl}}" alt="">
+                        <section>
+                            <h3>{{y['detail-title']}}</h3>
+                            <p>
+                                {{y.description}}
+                            </p>
+                            <p>
+                                <span>{{y.price | currency:'￥'}}</span>
+                                <button ng-click="add($event)" class="addcar">+</button>
+                            </p>
+                        </section>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="blank"></div>
+        <div id="detail-pay">
+            <p id="payP">
+                <span class="che" ng-click="show_car()"><span id="num" ng-init="num=0">{{num}}</span></span>
+                <span ng-init="money=0" id="money">{{money|currency:'￥'}}</span>
+            </p>
+            <button ng-click="pay()">
+                去结算
+            </button>
+        </div>
+    </div>
+    <!--这块是我的购物车里面的内容-->
+    <div id="car-mask">
+        <div id="car-content">
+            <h3><span>购物车</span><span ng-click="clear()">清空</span></h3>
+            <div id="car-mask-list">
+                <ul>
+                    <!--<li ng-repeat="x in cartList">-->
+                        <!--<span class="food-name">{{x.title}}</span>-->
+                        <!--<span class="price">{{x.price}}</span>-->
+                        <!--<div class="right">-->
+                            <!--<button class="plus" ng-click="plus()">-</button>-->
+                            <!--<span class="num">{{x.num1}}</span>-->
+                            <!--<button class="add">+</button>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="second" ng-click="show()">
+        <section>
+            <h3>商家信息</h3>
+            <ul>
+                <li> 必胜宅急送（育知东路店）</li>
+                <li>地址：北京市昌平区回龙观镇龙腾苑三区7号楼北侧一层</li>
+                <li>营业时间：10:00-22:00</li>
+                <li> 营业执照</li>
+                <li> 餐饮服务许可证</li>
+            </ul>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div id="qiang_lj_box" ng-click="payment()">
+	<!--头-->
+	<div class="qiang_lj_header">
+		<div class="qiang_lj_header_div">
+			<p id="qiang_lj_box_back" ng-click="forward()">X</p>
+			<p>限时抢购</p>
+		</div>
+	</div>
+	<!--header图片-->
+	<div class="qiang_lj_bg">
+		<img src="imgs/qiang_bg.jpg" />
+	</div>
+	<!--main-->
+	<div class="qiang_lj_mian">
+		<div class="qiang_lj_mian_nav">
+			<ul>
+				<li>
+					<p>10:00</p>
+					<p>即将开抢</p>
+				</li>
+				<li>
+					<p>13:00</p>
+					<p>已结束</p>
+				</li>
+				<li>
+					<p>16:00</p>
+					<p>已结束</p>
+				</li>
+				<li>
+					<p>20:00</p>
+					<p>已结束</p>
+				</li>
+			</ul>
+		</div>
+		<div class="qiang_lj_mian_list">
+			<ul>
+				<li ng-repeat="x in qiang_data">
+					<img src="{{x.imgUrl}}" />
+					<div class="qiang_lj_mian_list_div">
+						<p>{{x.title}}</p>
+						<p>{{x.description}}</p>
+						<p>￥{{x.price}}</p>
+					</div>
+					<p class="qiang_lj_mian_list_p">即将开抢</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div>

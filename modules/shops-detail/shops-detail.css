@@ -1,0 +1,358 @@
+html,body{
+    height:100%;
+}
+#shops-detail {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    z-index: 2;
+}
+#shops-detail #detail-header {
+    padding: 0.20rem;
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 1.64rem;
+    background: #B33B4A;
+}
+#shops-detail #detail-header figure {
+    width: 100%;
+    height: 100%;
+}
+#shops-detail #detail-header figure img {
+    -webkit-border-radius: 0.05rem;
+    -moz-border-radius: 0.05rem;
+    border-radius: 0.05rem;
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin-right: 0.25rem;
+}
+#shops-detail #detail-header figure figcaption {
+    float: left;
+}
+#shops-detail #detail-header figure figcaption h3 {
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#shops-detail #detail-header figure figcaption p:nth-child(2) {
+    font-size: 0.12rem;
+}
+#shops-detail #detail-header figure figcaption p:last-child {
+    font-size: 0.12rem;
+}
+#shops-detail #detail-header figure figcaption p:last-child span {
+    display: inline-block;
+    width: 0.24rem;
+    height: 0.22rem;
+    background: url(../../imgs/shopdetail/jian.jpg) no-repeat center center;
+    background-size: 0.22rem;
+}
+#shops-detail #ad {
+    width: 100%;
+    background: rgba(152, 54, 65, 0.6);
+    font-size: 0.12rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0.2rem;
+}
+#shops-detail #ad p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#shops-detail #ad span {
+    background: #EBD7D9;
+    color: #666;
+}
+#detail-content {
+    overflow: hidden;
+    font-size:0.26rem;
+}
+#detail-content #detail-nav{
+    height: 0.74rem;
+    border-bottom: 1px solid #ccc;
+}
+#detail-content #detail-nav li {
+    float: left;
+    width: 50%;
+    height: 0.74rem;
+    line-height: 0.74rem;
+    text-align: center;
+}
+#detail-content #detail-nav li:first-child a{
+    color:#3190E8;
+    border-bottom: 1px solid #3190E8;
+}
+#detail-content #detail-nav li a:hover{
+    color:#3190E8;
+    border-bottom: 1px solid #3190E8;
+}
+#detail-content #content-left {
+    overflow-y: auto;
+    font-size: 0.22rem;
+    float: left;
+    width: 1.45rem;
+}
+#detail-content #content-left ul{
+    height: 8.14rem;
+    overflow-y: scroll;
+}
+#detail-content #content-left ul li {
+    border-bottom: 1px solid #eee;
+    background: #F8F8F8;
+    padding:0.3rem 0.13rem;
+    text-align: center;
+}
+#detail-content #content-left ul li:first-child {
+    border-left: 0.04rem solid #3190E8;
+    background: white;
+}
+#detail-content #content-right {
+    height: 8.14rem;
+    overflow-y: scroll;
+     float: left;
+     width: 4.95rem;
+}
+#detail-content #content-right dl dt{
+    font-weight:bold;
+    color: #727272;
+    padding: 0.12rem 0.17rem;
+    height: 0.53rem;
+    background: #F1f1f1;
+}
+#detail-content #content-right dl dd{
+    background: white;
+    overflow: hidden;
+    width: 100%;
+    height: 2.6rem;
+    padding:0.26rem 0.17rem;
+    border-bottom: 0.01rem solid #eee;
+}
+#detail-content #content-right dl dd img{
+    width: 0.88rem;
+    height:0.88rem;
+    float: left;
+}
+#detail-content #content-right dl dd section{
+    padding: 0.1rem;
+    width: 3.64rem;
+    float: left;
+}
+#detail-content #content-right dl dd section h3{
+    font-size: 0.26rem;
+}
+#detail-content #content-right dl dd section p:nth-child(2){
+    text-indent: 0.1rem;
+    font-size: 0.08rem;
+    color: #ccc;
+}
+#detail-content #content-right dl dd section p:last-child span{
+    float: left;
+    font-size:0.36rem;
+    color: #FF8636;
+}
+#detail-content #content-right dl dd section p:last-child button{
+    float: right;
+    width: 0.55rem;
+    height: 0.55rem;
+    color: white;
+    border-radius: 50%;
+    background: #3190E8;
+    border:none;
+    font-size:0.4rem;
+    font-weight:bold;
+}
+#detail-pay{
+    position: fixed;
+    z-index: 99;
+    left:0;
+    bottom:0;
+    height: 0.84rem;
+}
+#detail-pay .che{
+    position: relative;
+    display: inline-block;
+    width: 1.3rem;
+    height:1.3rem;
+    margin-top: -0.3rem;
+    background: url('../../imgs/shopdetail/che.png') no-repeat center center;
+    background-size: cover;
+}
+#detail-pay #che{
+    position: relative;
+    display: inline-block;
+    width: 1.3rem;
+    height:1.3rem;
+    margin-top: -0.3rem;
+    background: url('../../imgs/shopdetail/che-new.png') no-repeat center center;
+    background-size: cover;
+}
+#detail-pay p:first-child{
+    float: left;
+    width: 4.56rem;
+    height:0.84rem;
+    background: rgba(0,0,0,0.9);
+    padding-left:1.34rem;
+}
+#detail-pay p:first-child span:last-child{
+    position: absolute;
+    width: 1.3rem;
+    height:1.3rem;
+    font-size:0.4rem;
+    color: white;
+}
+#detail-pay button{
+    font-size: 0.30rem;
+    height:0.84rem;
+    border: 0;
+    float: left;
+    width: 1.84rem;
+    background: #55DB6C;
+    font-weight:bold;
+    color: white;
+}
+#second{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,0.3);
+}
+#second section{
+    background: white;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width: 100%;
+    padding: 0.3rem;
+    height:4.72rem;
+}
+#second h3{
+    font-size: 0.30rem;
+    border-bottom: 1px solid #F1f1f1;
+}
+#second ul{
+    margin-left: 0.2rem;
+}
+#second ul li {
+    padding: 0.1rem 0;
+    font-size: 0.26rem;
+    border-bottom: 1px solid #F1f1f1;
+}
+.blank{
+    width: 100%;
+    background: white;
+    height:0.90rem;
+}
+#detail-pay p:first-child  #num{
+    border-radius: 50%;
+    width: 0.3rem;
+    height: 0.3rem;
+    background: #FD7354;
+    color: white;
+    text-align: center;
+    line-height: 0.3rem;
+    position: absolute;
+    right:0.1rem;
+    top:0.1rem;
+    font-size:0.2rem;
+}
+/*jquery插件所要用的样式*/
+.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
+/*购物车的样式*/
+#car-mask{
+    display:none;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 10.54rem;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+}
+#car-mask #car-content h3{
+    padding: 0 0.2rem;
+    width: 100%;
+    height:0.8rem;
+    background: #ECEFF1;
+}
+#car-mask #car-content h3 span:first-child{
+    padding: 0 0.05rem;
+    height: 100%;
+    line-height:0.8rem;
+    display: inline-block;
+    border-left:0.04rem solid #3190E8;
+}
+#car-mask #car-content h3 span:last-child{
+    line-height: 0.8rem;
+    float: right;
+}
+#car-content{
+    max-height:4.64rem;
+    overflow-y: scroll;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 0.02rem solid #eee;
+    background: white;
+}
+#car-mask-list ul li {
+    overflow: hidden;
+    height: 1.28rem;
+    line-height: 1.28rem;
+    padding: 0 0.2rem;
+}
+#car-mask-list ul li .food-name{
+    font-size:0.30rem;
+    float: left;
+    width: 2.5rem;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+#car-mask-list ul li .price{
+     display: inline-block;
+     padding: 0 0.1rem;
+     color: #FF6600;
+     font-size: 0.30rem;
+ }
+#car-mask-list ul li .right{
+    float: right;
+}
+#car-mask-list ul li .plus,#car-mask-list ul li .add{
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    border: none;
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+#car-mask-list ul li .plus{
+    background: white;
+    color: #3190E8;
+    border: 0.04rem solid #3190E8;
+}
+#car-mask-list ul li .add{
+    color: white;
+    background: #3190E8;
+}
+#car-mask-list ul li .num{
+    display: inline-block;
+    font-weight:bold;
+    font-size:0.30rem;
+    padding:0 0.05rem;
+}

@@ -1,0 +1,90 @@
+<div id="good" >
+	<div class="good_header">
+		<img src="imgs/images/IMG_0240_02.gif" />
+	</div>
+
+
+	<!--主体-->
+
+	<div class="main">
+		<div class="gps">
+			<p>— <img src="imgs/images/IMG_0240_05.gif" />昌平区黄平路(北新家园旁) —</p>
+		</div>
+
+		<!--商家-->
+		<div class="eat">
+			<div class="smaller" ng-repeat="x in best">
+				<div class="left_img" >
+					<img src="{{x.sel_img}}" />
+				</div>
+				<div class="right_span">
+					<span class="spanOne" >
+						{{x.sel_des}}
+					</span>
+					<span class="span_2">
+						{{x.sel_name}}
+					</span>
+					<span class="span_3">
+						{{x.sel_tic}}
+					</span>
+					<span class="span_11">
+						{{x.sel_pro}}
+					</span>
+					<span class="span_4"><img src="{{x.sel_star}}"/>
+					</span>
+					<!--<span class="span_5">
+						{{x.sel_blue}}
+					</span>-->
+					<span class="span_6">
+						{{x.sel_arrive}}
+					</span>
+					<span class="span_7">
+						{{x.sel_score}}
+					</span>
+					<span class="span_12">
+						{{x.sel_sell}}
+					</span>
+					<span class="span_8">
+						{{x.sel_send}}
+					</span>
+					<span class="span_9">
+						{{x.sel_dist}}
+					</span>
+					<span class="span_10">
+						{{x.sel_time}}
+					</span>
+				</div>
+				<div class="right_p">
+					<p><span class="p1_span">
+						{{x.sel_new}}
+					</span>
+						{{x.sel_act}}
+					</p>
+					<p><span class="p2_span">
+						{{x.sel_red}}
+					</span>
+						{{x.sel_reduce}}
+					</p>
+				</div>
+			</div>
+
+			<!--上拉提示框-->
+
+			<div class="up">
+				<p>上拉加载更多</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--footer-->
+	<div class="footer">
+		<div>
+			<p id="div_p">活动细则</p>
+		</div>
+		<p class="foot_p">活动时间：2016年9月17日-9月26日</p>
+		<p class="foot_p">参与方式：活动仅限饿了么会员参与</p>
+		<p class="foot_p">参与区域：所有活动商户配送范围内</p>
+	</div>
+</div>
